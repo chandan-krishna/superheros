@@ -5,7 +5,7 @@ const SuperHeroCard = ({ superHero }) => {
   const { name, images, appearance, biography,powerstats } = superHero;
   return (
     <div className={style.superHeroCard}>
-      <img src={images?.md} alt={name} />
+      <img className={style.image} src={images?.md} alt={name} />
       <div className={style.content}>
         <p className={style.name}>{name}</p>
         <div>
